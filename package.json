@@ -2,6 +2,7 @@
   "name": "v-object-inspector",
   "version": "0.0.1",
   "private": false,
+  "packageManager": "pnpm@8.6.12",
   "exports": {
     ".": {
       "import": "./dist/v-object-inspector.es.js",
