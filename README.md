@@ -10,7 +10,7 @@
 
 # v-object-inspector
 
-A Vue 3 component for displaying JavaScript objects like [Browser DevTools](https://developer.chrome.com/docs/devtools/).
+A Vue 3 component for displaying JavaScript objects like [Browser DevTools](https://developer.chrome.com/docs/devtools/) ([live demo](https://zhangyu94.github.io/VObjectInspector/)).
 
 > This repository is a rewrite of [vue-object-inspector](https://github.com/vikyd/vue-object-inspector) with Vue 3 and TypeScript.
 
