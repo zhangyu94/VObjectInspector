@@ -27,6 +27,7 @@ Register as a global component:
 ```ts
 import { createApp } from 'vue'
 import VObjectInspector from 'v-object-inspector'
+import 'v-object-inspector/dist/style.css'
 import App from './App.vue'
 
 const app = createApp(App)
@@ -39,6 +40,7 @@ Or import locally:
 ```vue
 <script setup lang="ts">
 import { VObjectInspector } from 'v-object-inspector'
+import 'v-object-inspector/dist/style.css'
 </script>
 
 <template>
@@ -82,9 +84,9 @@ import { VObjectInspector } from 'v-object-inspector'
 - Required: false
 - Note: the root node has level 0 and its children have level 1
 - Scenarios:
-    - If want to expand all level, change `expandLevel` to a very big number.
-    - If want to collapse all level, change `expandLevel` to 0.
-    - If already change expand by hand, change the `expandLevel` to a negative number, then change it back in `$nextTick`.
+    - If want to expand all levels, change `expandLevel` to a very big number.
+    - If want to collapse all levels, change `expandLevel` to 0.
+    - If already changed expand by hand, change the `expandLevel` to a negative number, then change it back in `$nextTick`.
 
 ### expandPaths
 
@@ -98,10 +100,10 @@ import { VObjectInspector } from 'v-object-inspector'
     - `['$.myKey']`: expand to `myKey` node (will also expand all parent nodes)
         - this is different from [react-inspector](https://github.com/storybookjs/react-inspector)
     - `['$.myKey.myArr']`: expand to `myArr` node (will also expand all parent nodes)
-    - `['$.a', '$.b']`: expand first level nodes `a` and `b`
+    - `['$.a', '$.b']`: expand first-level nodes `a` and `b`
     - `['$.1']`: expand by array index
-    - `['$.*']`: wildcard, expand all level 2 nodes, equivalent to `:expandLevel="2"`
-    - `['$.*.*']`: wildcard, expand all level 3 nodes, equivalent to `:expandLevel="3"`
+    - `['$.*']`: wildcard, expand all level-2 nodes, equivalent to `:expandLevel="2"`
+    - `['$.*.*']`: wildcard, expand all level-3 nodes, equivalent to `:expandLevel="3"`
 
 #### expandLevel vs expandPaths
 
