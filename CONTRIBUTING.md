@@ -12,6 +12,15 @@ Clone this repo to your local machine and install the dependencies.
 pnpm install
 ```
 
+### Publishing
+
+1. Bump the `version` in `package.json`.
+2. Push the changes to the `main` branch.
+3. Create a new tag with according to the `version`.
+4. Push the tag to the `main` branch.
+5. Create a new release on GitHub with the tag.
+6. The `publish-to-npm.yml` workflow will automatically publish the package to npm.
+
 ## Project Structure
 
 This repository is initialized with the [vue-ts template](https://vite.new/vue-ts) of [vite](https://vitejs.dev/).
