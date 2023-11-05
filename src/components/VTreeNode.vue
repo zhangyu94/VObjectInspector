@@ -135,7 +135,7 @@ const darkTheme: boolean = inject('darkTheme', false)
 .tree-node-placeholder {
   white-space: pre;
   font-size: 12px;
-  margin-right: 3px;
+  margin-right: 6.5px;
 }
 
 .tree-node-arrow {
