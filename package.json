@@ -1,8 +1,9 @@
 {
   "name": "v-object-inspector",
+  "type": "module",
   "version": "0.1.3",
   "private": false,
-  "packageManager": "pnpm@8.6.12",
+  "packageManager": "pnpm@8.15.7",
   "license": "MIT",
   "exports": {
     ".": {
@@ -34,10 +35,10 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "vue": "^3.3.7"
+    "vue": "^3.4.21"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.43.1",
+    "@antfu/eslint-config": "^2.13.3",
     "@storybook/addon-essentials": "7.5.2",
     "@storybook/addon-interactions": "7.5.2",
     "@storybook/addon-links": "7.5.2",
@@ -45,25 +46,19 @@
     "@storybook/testing-library": "0.2.2",
     "@storybook/vue3": "7.5.2",
     "@storybook/vue3-vite": "7.5.2",
-    "@types/node": "^20.8.10",
-    "@vitejs/plugin-vue": "^4.4.0",
-    "eslint": "^8.52.0",
-    "eslint-plugin-storybook": "^0.6.15",
+    "@types/node": "^20.12.7",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^9.0.0",
+    "eslint-plugin-storybook": "^0.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rollup-plugin-typescript2": "^0.36.0",
     "storybook": "7.5.2",
-    "taze": "^0.12.0",
-    "typescript": "^5.2.2",
-    "vite": "^4.5.0",
-    "vite-plugin-dts": "^3.6.3",
-    "vitest": "^0.34.6",
-    "vue-tsc": "^1.8.22"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@antfu",
-      "plugin:storybook/recommended"
-    ]
+    "taze": "^0.13.4",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.8",
+    "vite-plugin-dts": "^3.8.3",
+    "vitest": "^1.5.0",
+    "vue-tsc": "^2.0.13"
   }
 }

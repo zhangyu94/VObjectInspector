@@ -28,7 +28,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'v-object-inspector',
-      fileName: (format) => `v-object-inspector.${format}.js`,
+      fileName: format => `v-object-inspector.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],

@@ -13,9 +13,9 @@ const { data } = toRefs(props)
 
 const isSimpleType = (object: unknown): boolean => (
   typeof object !== 'object'
-    || object === null
-    || object instanceof Date
-    || object instanceof RegExp
+  || object === null
+  || object instanceof Date
+  || object instanceof RegExp
 )
 
 // `provide` from top component `VObjectInspector`

@@ -51,7 +51,7 @@ const props = defineProps({
 })
 
 const emit = defineEmits<{
-  (e: 'update:expanded-paths', d: { path: string; val: boolean }): void
+  (e: 'update:expanded-paths', d: { path: string, val: boolean }): void
 }>()
 
 const {

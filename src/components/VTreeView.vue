@@ -91,7 +91,7 @@ const updateExpandedPaths = (): void => {
 
 /** When user interaction triggers update of expanded paths. */
 const onUpdateExpandedPaths = (
-  { path, val }: { path: string; val: boolean },
+  { path, val }: { path: string, val: boolean },
 ): void => {
   expandedPaths.value = {
     ...expandedPaths.value,

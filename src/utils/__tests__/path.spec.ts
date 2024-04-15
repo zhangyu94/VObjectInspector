@@ -4,7 +4,7 @@ import { DEFAULT_ROOT_PATH, wildcardPathsFromLevel } from '../path'
 
 const root = DEFAULT_ROOT_PATH
 
-describe('PathUtils', () => {
+describe('pathUtils', () => {
   it('wildcardPathsFromLevel works', () => {
     expect(wildcardPathsFromLevel(-1)).toEqual([])
 
