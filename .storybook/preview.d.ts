@@ -1,8 +1,6 @@
 declare const preview: {
     parameters: {
-        actions: {
-            argTypesRegex: string;
-        };
+        actions: {};
         controls: {
             matchers: {
                 color: RegExp;
