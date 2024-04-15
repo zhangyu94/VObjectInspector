@@ -12,4 +12,6 @@ type Story = StoryObj<typeof meta>
 
 export const EmptySet: Story = { args: { data: new Set() } }
 export const SimpleSet: Story = { args: { data: new Set([1, 2, 3, 4]) } }
-export const NestedSet: Story = { args: { data: new Set([1, 2, 3, new Set([1, 2])]), expandLevel: 2 } }
+export const NestedSet: Story = {
+  args: { data: new Set([1, 2, 3, new Set([1, 2])]), expandLevel: 2 },
+}

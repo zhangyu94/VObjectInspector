@@ -17,12 +17,23 @@ export const EmptyObject: Story = {
 }
 export const EmptyStringKey: Story = { args: { data: { '': 'hi' } } }
 export const ObjectWithGetter: Story = {
-  args: { data: { get prop() { return 'v' } }, expandLevel: 2 },
+  args: {
+    data: {
+      get prop() {
+        return 'v'
+      },
+    },
+    expandLevel: 2,
+  },
 }
 // TODO: this example does not work at the moment
 export const ObjectWithGetterThatThrows: Story = {
   args: {
-    data: { get prop() { throw new Error('error') } },
+    data: {
+      get prop() {
+        throw new Error('error')
+      },
+    },
     expandLevel: 2,
   },
 }

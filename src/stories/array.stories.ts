@@ -21,17 +21,23 @@ export const ArrayWithDifferentTypesOfElements: Story = {
   args: { data: ['a', 1, {}], expandLevel: 1 },
 }
 export const LongArray: Story = {
-  args: { data: Array.from({ length: 1000 }).fill(0).map((_, i) => `${i}`) },
+  args: {
+    data: Array.from({ length: 1000 })
+      .fill(0)
+      .map((_, i) => `${i}`),
+  },
 }
 export const ArrayWithBigObjects: Story = {
   args: {
-    data: Array.from({ length: 100 }).fill(0).map((_, i) => ({
-      key: i,
-      name: `John #${i}`,
-      dateOfBirth: new Date(i * 10e8),
-      address: `${i} Main Street`,
-      zip: 90210 + i,
-    })),
+    data: Array.from({ length: 100 })
+      .fill(0)
+      .map((_, i) => ({
+        key: i,
+        name: `John #${i}`,
+        dateOfBirth: new Date(i * 10e8),
+        address: `${i} Main Street`,
+        zip: 90210 + i,
+      })),
   },
 }
 export const Uint32Array_: Story = { args: { data: new Uint32Array(1000) } }

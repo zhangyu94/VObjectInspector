@@ -13,20 +13,50 @@ type Story = StoryObj<typeof meta>
 
 export const EmptyMap: Story = { args: { data: new Map() } }
 export const BooleanKeys: Story = {
-  args: { data: new Map([[true, 'one'], [false, 'two']]) },
+  args: {
+    data: new Map([
+      [true, 'one'],
+      [false, 'two'],
+    ]),
+  },
 }
 export const RegexKeys: Story = {
-  args: { data: new Map([[/S/g, 'one'], [/D/g, 'two']]) },
+  args: {
+    data: new Map([
+      [/S/g, 'one'],
+      [/D/g, 'two'],
+    ]),
+  },
 }
 export const StringKeys: Story = {
-  args: { data: new Map([['one', 1], ['two', 2]]) },
+  args: {
+    data: new Map([
+      ['one', 1],
+      ['two', 2],
+    ]),
+  },
 }
 export const ObjectKeys: Story = {
-  args: { data: new Map([[{}, 1], [{ key: 2 }, 2]]) },
+  args: {
+    data: new Map([
+      [{}, 1],
+      [{ key: 2 }, 2],
+    ]),
+  },
 }
 export const ArrayKeys: Story = {
-  args: { data: new Map([[[1], 1], [[2], 2]]) },
+  args: {
+    data: new Map([
+      [[1], 1],
+      [[2], 2],
+    ]),
+  },
 }
 export const MapKeys: Story = {
-  args: { data: new Map([[new Map(), 1], [new Map([]), 2]]) },
+  args: {
+    data: new Map([
+      [new Map(), 1],
+      [new Map([]), 2],
+    ]),
+  },
 }

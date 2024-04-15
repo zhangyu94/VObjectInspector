@@ -10,14 +10,14 @@ export default meta
 
 type Story = StoryObj<typeof meta>
 
-export const AnonymousFunction: Story = { args: { data() { } } }
-export const AnonymousArrowFunction: Story = { args: { data: () => { } } }
+export const AnonymousFunction: Story = { args: { data() {} } }
+export const AnonymousArrowFunction: Story = { args: { data: () => {} } }
 export const NamedFunction: Story = {
-  args: { data: function namedFunction() { } },
+  args: { data: function namedFunction() {} },
 }
 export const NamedFunctionShowNonEnumerable: Story = {
   args: {
-    data: function namedFunction() { },
+    data: function namedFunction() {},
     showNonEnumerable: true,
     expandLevel: 1,
   },
