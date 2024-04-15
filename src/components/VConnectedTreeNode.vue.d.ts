@@ -42,7 +42,7 @@ declare const _default: import("vue").DefineComponent<{
     };
 }, (_ctx: any, _cache: any) => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
     [key: string]: any;
-}>, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, "update:expanded-paths"[], "update:expanded-paths", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+}>, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, "update:expanded-paths"[], "update:expanded-paths", import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
     /** The JavaScript variable to inspect. */
     data: {
         type: null;

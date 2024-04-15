@@ -1,6 +1,7 @@
-import type { PropType } from './vue/dist/vue.esm-bundler.js';
-import type { ObjectIterator } from '../utils/data';
-declare const _default: import('./vue/dist/vue.esm-bundler.js').DefineComponent<{
+import { ObjectIterator } from '../utils/data';
+import { PropType } from '../../vue/dist/vue.esm-bundler.js';
+
+declare const _default: import('../../vue/dist/vue.esm-bundler.js').DefineComponent<{
     /** The JavaScript variable to inspect. */
     data: {
         type: null;
@@ -42,12 +43,12 @@ declare const _default: import('./vue/dist/vue.esm-bundler.js').DefineComponent<
         type: PropType<Record<string, boolean>>;
         required: true;
     };
-}, {}, unknown, {}, {}, import('./vue/dist/vue.esm-bundler.js').ComponentOptionsMixin, import('./vue/dist/vue.esm-bundler.js').ComponentOptionsMixin, {
+}, {}, unknown, {}, {}, import('../../vue/dist/vue.esm-bundler.js').ComponentOptionsMixin, import('../../vue/dist/vue.esm-bundler.js').ComponentOptionsMixin, {
     "update:expanded-paths": (d: {
         path: string;
         val: boolean;
     }) => void;
-}, string, import('./vue/dist/vue.esm-bundler.js').VNodeProps & import('./vue/dist/vue.esm-bundler.js').AllowedComponentProps & import('./vue/dist/vue.esm-bundler.js').ComponentCustomProps, Readonly<import('./vue/dist/vue.esm-bundler.js').ExtractPropTypes<{
+}, string, import('../../vue/dist/vue.esm-bundler.js').PublicProps, Readonly<import('../../vue/dist/vue.esm-bundler.js').ExtractPropTypes<{
     /** The JavaScript variable to inspect. */
     data: {
         type: null;

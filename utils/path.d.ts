@@ -1,4 +1,5 @@
-import type { ObjectIterator } from './data';
+import { ObjectIterator } from './data';
+
 export declare const DEFAULT_ROOT_PATH = "$";
 /** Checks whether the data has child nodes. */
 export declare const hasChildNodes: (data: unknown, dataIterator: ObjectIterator) => boolean;

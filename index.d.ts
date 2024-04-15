@@ -1,5 +1,6 @@
-import type { App } from './vue/dist/vue.esm-bundler.js';
-import VObjectInspector from './VObjectInspector.vue';
+import { default as VObjectInspector } from './VObjectInspector.vue';
+import { App } from '../vue/dist/vue.esm-bundler.js';
+
 declare const _default: {
     install: (app: App) => void;
 };
